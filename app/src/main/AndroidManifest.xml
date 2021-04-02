@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApp">
-        <activity android:name=".activity_config_agwnas"></activity>
+        <activity android:name=".activity_queries"></activity>
+        <activity android:name=".activity_config_omada" />
+        <activity android:name=".activity_config_athilitis" />
+        <activity android:name=".activity_config_athima" />
+        <activity android:name=".activity_config_agwnas" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
