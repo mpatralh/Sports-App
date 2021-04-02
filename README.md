@@ -1,2 +1,2 @@
 # Sports-App
-This our Sports App in Adroid
+This our Sports App in Android
