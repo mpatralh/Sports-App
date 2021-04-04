@@ -8,9 +8,40 @@
         <item android:id="@+id/Input"
             android:icon="@mipmap/input"
             android:title="input"/>
+
+
+
         <item android:id="@+id/modify"
             android:icon="@mipmap/modify"
-            android:title="modify"/>
+            android:title="modify">
+                <menu>
+                        <item
+                            android:id="@+id/match"
+                            android:title="match"
+                            android:visible="true" />
+                        <item
+                            android:id="@+id/athlete"
+                            android:title="athlete"
+                            android:visible="true"/>
+                        <item
+                            android:id="@+id/sport"
+                            android:title="sport"
+                            android:visible="true" />
+                        <item
+                            android:id="@+id/team"
+                            android:title="team"
+                            android:visible="true" />
+
+
+                </menu>
+        </item><![CDATA[
+
+
+        />
+
+
+
+        ]]>
         <item android:id="@+id/delete"
             android:icon="@mipmap/delete"
             android:title="delete"/>

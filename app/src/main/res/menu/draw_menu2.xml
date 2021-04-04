@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/match"
+        android:visible="true"
+        android:title="match" />
+    <item
+        android:id="@+id/athlete"
+        android:visible="true"
+        android:title="athlete" />
+    <item
+        android:id="@+id/sport"
+        android:visible="true"
+        android:title="sport" />
+    <item
+        android:id="@+id/team"
+        android:visible="true"
+        android:title="team" />
+
+</menu>
