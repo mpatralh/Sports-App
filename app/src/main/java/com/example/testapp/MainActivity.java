@@ -22,15 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    //Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //toolbar = findViewById(R.id.toolbar);
-        // setSupportActionBar(toolbar);
 
         drawerLayout = findViewById(R.id.drawerLout);
         navigationView = findViewById(R.id.navigationView);
@@ -40,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.show: {
-                        displayMessage("You oppened queries activity");
+                        displayMessage("You opened queries activity");
                         startActivity(new Intent(MainActivity.this,activity_queries.class));
                         drawerLayout.closeDrawers();
                         break;
@@ -53,38 +50,17 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.delete: {
                         menuItem.setChecked(true);
-
                         drawerLayout.closeDrawers();
                         break;
                     }
-                    case R.id.match: {
-                        displayMessage("You oppened config match activity");
-                        startActivity(new Intent(MainActivity.this,activity_config_agwnas.class));
+                    case R.id.modify: {
+                        displayMessage("You have to choose what to config");
+                        startActivity(new Intent(MainActivity.this,chooseconfig.class));
                         drawerLayout.closeDrawers();
                         return true;
 
                     }
-                    case R.id.athlete: {
-                        displayMessage("You oppened config athlete activity");
-                        startActivity(new Intent(MainActivity.this,activity_config_athilitis.class));
-                        drawerLayout.closeDrawers();
-                        return true;
 
-                    }
-                    case R.id.sport: {
-                        displayMessage("You oppened config sport activity");
-                        startActivity(new Intent(MainActivity.this,activity_config_athima.class));
-                        drawerLayout.closeDrawers();
-                        return true;
-
-                    }
-                    case R.id.team: {
-                        displayMessage("You oppened config team activity");
-                        startActivity(new Intent(MainActivity.this,activity_config_omada.class));
-                        drawerLayout.closeDrawers();
-                        return true;
-
-                    }
 
                 }
                 return false;
