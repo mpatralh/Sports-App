@@ -19,7 +19,7 @@ public class chooseconfig extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseconfig.this,activity_config_omada.class));
+                startActivity(new Intent(chooseconfig.this,activity_config_agwnas.class));
             }
         });
 
