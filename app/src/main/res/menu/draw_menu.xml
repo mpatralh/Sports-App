@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
         <item android:id="@+id/show"
-            android:icon="@mipmap/show"
             android:title="show"
+            android:icon="@mipmap/iconshow"
             />
         <item android:id="@+id/Input"
-            android:icon="@mipmap/input"
-            android:title="input"/>
+            android:title="input"
+            android:icon="@mipmap/iconinput"/>
 
 
 
         <item android:id="@+id/modify"
-            android:icon="@mipmap/modify"
-            android:title="modify">
+            android:title="modify"
+            android:icon="@mipmap/modify">
                 <menu>
                         <item
                             android:id="@+id/match"
@@ -34,16 +34,10 @@
 
 
                 </menu>
-        </item><![CDATA[
+        </item>
 
-
-        />
-
-
-
-        ]]>
         <item android:id="@+id/delete"
-            android:icon="@mipmap/delete"
-            android:title="delete"/>
+            android:title="delete"
+            android:icon="@mipmap/icondelete"/>
 
 </menu>
