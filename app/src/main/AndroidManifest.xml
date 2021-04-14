@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApp">
-        <activity android:name=".activity_show_athlima"></activity>
-        <activity android:name=".activity_show_omada" />
-        <activity android:name=".activity_show_athlitis" />
-        <activity android:name=".activity_show_agwnas" />
-        <activity android:name=".activity_chooseinput" />
+        <activity android:name=".input_athlima"></activity>
+        <activity android:name=".input_omada" />
+        <activity android:name=".input_athlitis" />
+        <activity android:name=".input_agwnas" />
+        <activity android:name=".chooseinput" />
         <activity android:name=".chooseconfig" />
-        <activity android:name=".activity_queries" />
-        <activity android:name=".activity_config_omada" />
-        <activity android:name=".activity_config_athilitis" />
-        <activity android:name=".activity_config_athima" />
-        <activity android:name=".activity_config_agwnas" />
+        <activity android:name=".queries" />
+        <activity android:name=".config_omada" />
+        <activity android:name=".config_athilitis" />
+        <activity android:name=".config_athima" />
+        <activity android:name=".config_agwnas" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

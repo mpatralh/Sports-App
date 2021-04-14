@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class activity_chooseinput extends AppCompatActivity {
+public class chooseinput extends AppCompatActivity {
 
     private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chooseinput);
+        setContentView(R.layout.chooseinput);
 
 
         button=(Button)findViewById(R.id.MatchId);
@@ -22,7 +22,7 @@ public class activity_chooseinput extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(activity_chooseinput.this,activity_show_agwnas.class));
+                startActivity(new Intent(chooseinput.this, input_agwnas.class));
             }
         });
 
@@ -33,7 +33,7 @@ public class activity_chooseinput extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(activity_chooseinput.this,activity_show_athlitis.class));
+                startActivity(new Intent(chooseinput.this, input_athlitis.class));
             }
         });
 
@@ -42,7 +42,7 @@ public class activity_chooseinput extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(activity_chooseinput.this,activity_show_athlima.class));
+                startActivity(new Intent(chooseinput.this, input_athlima.class));
             }
         });
 
@@ -51,7 +51,7 @@ public class activity_chooseinput extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(activity_chooseinput.this,activity_show_omada.class));
+                startActivity(new Intent(chooseinput.this, input_omada.class));
             }
         });
 

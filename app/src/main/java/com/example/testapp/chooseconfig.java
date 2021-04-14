@@ -12,14 +12,14 @@ public class chooseconfig extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chooseconfig);
+        setContentView(R.layout.chooseconfig);
 
         button=(Button)findViewById(R.id.MatchId);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseconfig.this,activity_config_agwnas.class));
+                startActivity(new Intent(chooseconfig.this, config_agwnas.class));
             }
         });
 
@@ -30,7 +30,7 @@ public class chooseconfig extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseconfig.this,activity_config_athilitis.class));
+                startActivity(new Intent(chooseconfig.this, config_athilitis.class));
             }
         });
 
@@ -39,7 +39,7 @@ public class chooseconfig extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseconfig.this,activity_config_athima.class));
+                startActivity(new Intent(chooseconfig.this, config_athima.class));
             }
         });
 
@@ -48,7 +48,7 @@ public class chooseconfig extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseconfig.this,activity_config_omada.class));
+                startActivity(new Intent(chooseconfig.this, config_omada.class));
             }
         });
 

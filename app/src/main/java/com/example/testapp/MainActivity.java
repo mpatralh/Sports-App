@@ -6,10 +6,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.SubMenu;
-import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -38,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.show: {
                         displayMessage("You opened queries activity");
-                        startActivity(new Intent(MainActivity.this,activity_queries.class));
+                        startActivity(new Intent(MainActivity.this, queries.class));
                         drawerLayout.closeDrawers();
                         break;
                     }
                     case R.id.Input: {
                         displayMessage("You have to input the values");
-                        startActivity(new Intent(MainActivity.this,activity_chooseinput.class));
+                        startActivity(new Intent(MainActivity.this, chooseinput.class));
                         drawerLayout.closeDrawers();
                         break;
                     }
