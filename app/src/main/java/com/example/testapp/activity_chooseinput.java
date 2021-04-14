@@ -7,19 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class chooseconfig extends AppCompatActivity {
+public class activity_chooseinput extends AppCompatActivity {
+
     private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chooseconfig);
+        setContentView(R.layout.activity_chooseinput);
+
 
         button=(Button)findViewById(R.id.MatchId);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseconfig.this,activity_config_agwnas.class));
+                startActivity(new Intent(activity_chooseinput.this,activity_show_agwnas.class));
             }
         });
 
@@ -30,7 +33,7 @@ public class chooseconfig extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseconfig.this,activity_config_athilitis.class));
+                startActivity(new Intent(activity_chooseinput.this,activity_show_athlitis.class));
             }
         });
 
@@ -39,7 +42,7 @@ public class chooseconfig extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseconfig.this,activity_config_athima.class));
+                startActivity(new Intent(activity_chooseinput.this,activity_show_athlima.class));
             }
         });
 
@@ -48,10 +51,9 @@ public class chooseconfig extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseconfig.this,activity_config_omada.class));
+                startActivity(new Intent(activity_chooseinput.this,activity_show_omada.class));
             }
         });
-
 
     }
 }

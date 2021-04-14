@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApp">
-        <activity android:name=".chooseconfig"></activity>
+        <activity android:name=".activity_show_athlima"></activity>
+        <activity android:name=".activity_show_omada" />
+        <activity android:name=".activity_show_athlitis" />
+        <activity android:name=".activity_show_agwnas" />
+        <activity android:name=".activity_chooseinput" />
+        <activity android:name=".chooseconfig" />
         <activity android:name=".activity_queries" />
         <activity android:name=".activity_config_omada" />
         <activity android:name=".activity_config_athilitis" />

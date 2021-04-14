@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".chooseconfig">
+    tools:context=".activity_chooseinput">
 
     <ImageView
         android:id="@+id/imageView"
@@ -22,10 +22,10 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="158dp"
-        android:layout_height="26dp"
+        android:layout_width="137dp"
+        android:layout_height="28dp"
         android:layout_marginTop="24dp"
-        android:text="WHAT TO CONFIG"
+        android:text="WHAT TO SHOW"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,4 +71,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SportId" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

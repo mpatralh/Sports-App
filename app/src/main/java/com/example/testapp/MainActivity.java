@@ -43,13 +43,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.Input: {
-                        menuItem.setChecked(true);
-
+                        displayMessage("You have to input the values");
+                        startActivity(new Intent(MainActivity.this,activity_chooseinput.class));
                         drawerLayout.closeDrawers();
                         break;
                     }
                     case R.id.delete: {
-                        menuItem.setChecked(true);
                         drawerLayout.closeDrawers();
                         break;
                     }
