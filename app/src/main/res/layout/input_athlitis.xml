@@ -69,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/inputAthlitisId"
         android:layout_width="169dp"
         android:layout_height="50dp"
         android:layout_marginTop="85dp"
@@ -82,7 +82,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/inputAthlitisName"
         android:layout_width="169dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
@@ -92,10 +92,10 @@
         android:inputType="textPersonName"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/inputAthlitisId" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/inputAthlitisSurname"
         android:layout_width="169dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
@@ -105,10 +105,10 @@
         android:inputType="textPersonName"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/inputAthlitisName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/inputAthlitisTown"
         android:layout_width="169dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
@@ -118,10 +118,10 @@
         android:inputType="textPersonName"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/inputAthlitisSurname" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/inputAthlitisButton"
         android:layout_width="123dp"
         android:layout_height="56dp"
         android:layout_marginStart="24dp"
@@ -145,7 +145,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/inputAthlitisCountry"
         android:layout_width="169dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
@@ -154,7 +154,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/inputAthlitisTown" />
 
     <TextView
         android:id="@+id/textView6"
@@ -179,7 +179,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/inputAthlitisSportsCode"
         android:layout_width="169dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
@@ -188,10 +188,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/inputAthlitisCountry" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/inputAthlitisYearOfBirth"
         android:layout_width="169dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
@@ -200,7 +200,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintTop_toBottomOf="@+id/inputAthlitisSportsCode" />
 
     <TextView
         android:id="@+id/textView11"
