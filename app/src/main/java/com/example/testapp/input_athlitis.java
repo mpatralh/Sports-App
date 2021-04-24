@@ -42,18 +42,42 @@ public class input_athlitis extends AppCompatActivity {
                 } catch (NumberFormatException ex) {
                     System.out.println("Could not parse " + ex);
                 }
+                int Var_SportsId = 0;
+                try {
+                    Var_SportsId = Integer.parseInt(inputAthlitisSportsId.getText().toString());
+                } catch (NumberFormatException ex) {
+                    System.out.println("Could not parse " + ex);
+                }
+                int Var_YearOfBirth=0;
+                try {
+                    Var_YearOfBirth = Integer.parseInt(inputAthlitisYearOfBirth.getText().toString());
+                } catch (NumberFormatException ex) {
+                    System.out.println("Could not parse " + ex);
+                }
                 String Var_name = inputAthlitisName.getText().toString();
                 String Var_surname = inputAthlitisSurname.getText().toString();
+                String Var_Town= inputAthlitisTown.getText().toString();
+                String Var_Country=inputAthlitisCountry.getText().toString();
+
 
                 Athlitis athlitis = new Athlitis();
                 athlitis.setAthl_id(Var_athlitisId);
                 athlitis.setName(Var_name);
                 athlitis.setSurname(Var_surname);
+                athlitis.setCity(Var_Town);
+                athlitis.setCountry(Var_Country);
+                athlitis.setSp_id(Var_SportsId);
+                athlitis.setBirthYear(Var_YearOfBirth);
 
                 MainActivity.theDatabase.theDaotemp().addAthlete(athlitis);
                 inputAthlitisId.setText("");
                 inputAthlitisName.setText("");
                 inputAthlitisSurname.setText("");
+                inputAthlitisTown.setText("");
+                inputAthlitisCountry.setText("");
+                inputAthlitisSportsId.setText("");
+                inputAthlitisYearOfBirth.setText("");
+
             }
 
         });

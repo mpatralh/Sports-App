@@ -15,6 +15,8 @@ public class Athlitis {
     private String surname;
     @ColumnInfo(name="athlCity")
     private String city;
+    @ColumnInfo(name="athlCountry")
+    private String country;
     @ColumnInfo(name="athlSp_id")
     private int Sp_id;
     @ColumnInfo(name="athlBirthYear")
@@ -51,6 +53,14 @@ public class Athlitis {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public int getSp_id() {
