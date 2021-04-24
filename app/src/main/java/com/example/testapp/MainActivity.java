@@ -37,19 +37,19 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.Input: {
                         menuItem.setChecked(true);
-
+                        displayMessage("You oppened Input");
                         drawerLayout.closeDrawers();
                         break;
                     }
                     case R.id.delete: {
                         menuItem.setChecked(true);
-
+                        displayMessage("You oppened Delete");
                         drawerLayout.closeDrawers();
                         break;
                     }
                     case R.id.modify: {
                         menuItem.setChecked(true);
-
+                        displayMessage("You oppened Modify");
                         drawerLayout.closeDrawers();
                         return true;
                     }
