@@ -13,4 +13,10 @@ public interface theDao {
 
     @Query("select * from athlitis")
     public List<Athlitis> getUsers();
+
+    @Insert
+    public void addAthlima(Athlima athlima);
+
+    @Query("select * from athlima")
+    public List<Athlima> getAthlima();
 }

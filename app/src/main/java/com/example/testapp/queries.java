@@ -27,8 +27,16 @@ public class queries extends AppCompatActivity {
             String country=i.getCountry();
             int sportid=i.getSp_id();
             int yearofB=i.getBirthYear();
-            result = result + "\n Id: " + code + "\n Name: " + name + "\n Surname: " + surname + "\n Town:"+town+"\n Country:"+country+"\n SportsID"+sportid+"\n YearOfBirth"+yearofB+"\n";
+            result = result + "\n AthlitisID: " + code + "\n Name: " + name + "\n Surname: " + surname + "\n Town:"+town+"\n Country:"+country+"\n SportsID:"+sportid+"\n YearOfBirth:"+yearofB+"\n";
 
+        }
+        List<Athlima>athlima=MainActivity.theDatabase.theDaotemp().getAthlima();
+        for(Athlima i:athlima){
+            int athlimaCode=i.getSportId();
+            String athlimaName=i.getSportName();
+            String sportKind=i.getSportKind();
+            String sportGender=i.getSportFilo();
+            result=result+"\n SportID:"+athlimaCode+"\n SportName:"+athlimaName+"\n SportKind:"+sportKind+"\n SportGender:"+sportGender+"\n";
         }
         textView.setText(result);
 
