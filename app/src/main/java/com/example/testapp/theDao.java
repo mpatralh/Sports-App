@@ -19,4 +19,9 @@ public interface theDao {
 
     @Query("select * from athlima")
     public List<Athlima> getAthlima();
+
+    @Insert void addOmada(Omada omada);
+
+    @Query("select * from omada")
+    public  List<Omada> getOmada();
 }

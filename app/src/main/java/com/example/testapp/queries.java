@@ -38,6 +38,18 @@ public class queries extends AppCompatActivity {
             String sportGender=i.getSportFilo();
             result=result+"\n SportID:"+athlimaCode+"\n SportName:"+athlimaName+"\n SportKind:"+sportKind+"\n SportGender:"+sportGender+"\n";
         }
+       List<Omada> omada = MainActivity.theDatabase.theDaotemp().getOmada();
+        for (Omada i: omada) {
+            int teamID = i.getTeamID();
+            String teamName = i.getTeamName();
+            String teamCountry = i.getTeamCountry();
+            String teamTown=i.getTeamTown();
+            int teamSportID=i.getSportId();
+            String teamStadium=i.getOnomaGipedou();
+            int teamEstablishm=i.getEtosIdrisis();
+            result = result + "\n TeamID: " + teamID + "\n TeamName: " + teamName + "\n TeamCountry: " + teamCountry + "\n TeamTowm:"+teamTown+"\n TeamSportID:"+teamSportID+"\n TeamStadium:"+teamStadium+"\n TeamEstablishment:"+teamEstablishm+"\n";
+
+        }
         textView.setText(result);
 
     }
