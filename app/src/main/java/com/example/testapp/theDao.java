@@ -15,6 +15,9 @@ public interface theDao {
     @Query("select * from athlitis")
     public List<Athlitis> getUsers();
 
+    @Update
+    public void updateAthliti(Athlitis athlitis);
+
 
     @Insert
     public void addAthlima(Athlima athlima);
@@ -29,4 +32,7 @@ public interface theDao {
 
     @Query("select * from omada")
     public  List<Omada> getOmada();
+
+    @Update
+    public  void updateOmada(Omada omada);
 }
