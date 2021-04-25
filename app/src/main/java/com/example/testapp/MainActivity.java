@@ -16,7 +16,6 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-    public static FragmentManager fragmentManager;
     public static TheDatabase theDatabase;
 
 
@@ -28,14 +27,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fragmentManager=getSupportFragmentManager();  //gia db
+
         theDatabase= Room.databaseBuilder(getApplicationContext(),TheDatabase.class,"theDB").allowMainThreadQueries().build();
-            /*if(findViewById(R.id.fragment_container)!=null){
-                if(savedInstanceState!=null){
-                    return;
-                }
-                fragmentManager.beginTransaction().add(R.id.fragment_container,new RoomUI_Fragment()).commit();
-            }*/
+
 
         drawerLayout = findViewById(R.id.drawerLout); //gia menu
         navigationView = findViewById(R.id.navigationView);

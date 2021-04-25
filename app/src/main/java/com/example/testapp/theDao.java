@@ -3,6 +3,7 @@ package com.example.testapp;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
 import java.util.List;
 
@@ -14,11 +15,15 @@ public interface theDao {
     @Query("select * from athlitis")
     public List<Athlitis> getUsers();
 
+
     @Insert
     public void addAthlima(Athlima athlima);
 
     @Query("select * from athlima")
     public List<Athlima> getAthlima();
+
+    @Update
+    public void updateAthlima(Athlima athlima);
 
     @Insert void addOmada(Omada omada);
 
