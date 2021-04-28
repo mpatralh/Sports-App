@@ -20,7 +20,12 @@
         <activity android:name=".config_athilitis" />
         <activity android:name=".config_athima" />
         <activity android:name=".config_agwnas" />
+        <activity android:name=".DeleteOptions" />
+        <activity android:name=".AthleteDeleteActiv" />
+        <activity android:name=".SportDeleteActiv" />
+        <activity android:name=".OmadaDeleteActiv" />
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

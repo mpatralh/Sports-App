@@ -29,9 +29,9 @@ public class OmadaDeleteActiv extends AppCompatActivity {
                 } catch (NumberFormatException ex) {
                     System.out.println("Could not parse " + ex);
                 }
-                Athlima sport = new Athlima();
-                sport.setSport_code(Var_teamid);
-                MainActivity.sportAppDB.sportdaotemp().deleteSport(sport);
+                Omada team = new Omada();
+                team.setTeamID(Var_teamid);
+                MainActivity.theDatabase.theDaotemp().deleteTeam(team);
                 teamdeleditText.setText("");
             }
         });

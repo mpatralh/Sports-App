@@ -30,8 +30,8 @@ public class AthleteDeleteActiv extends AppCompatActivity {
                     System.out.println("Could not parse " + ex);
                 }
                 Athlitis athlete = new Athlitis();
-                athlete.setAthleteCode(Var_athletetid);
-                MainActivity.sportAppDB.sportdaotemp().deleteAthlete(athlete);
+                athlete.setAthl_id(Var_athletetid);
+                MainActivity.theDatabase.theDaotemp().deleteAthlete(athlete);
                 athletedeleditText.setText("");
             }
         });

@@ -49,7 +49,11 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.delete: {
-                        drawerLayout.closeDrawers();
+                        menuItem.setChecked(true);
+                        startActivity(new Intent(MainActivity.this, DeleteOptions.class)); //otan patietai to input button gia insertion anoigei to activity InputOptionsActivity
+                        displayMessage("You oppened Delete");
+                        //drawerLayout.closeDrawers();
+                        menuItem.setChecked(false);
                         break;
                     }
                     case R.id.modify: {

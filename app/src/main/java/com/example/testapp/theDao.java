@@ -1,6 +1,7 @@
 package com.example.testapp;
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
@@ -18,6 +19,14 @@ public interface theDao {
     @Update
     public void updateAthliti(Athlitis athlitis);
 
+    @Delete
+    public void deleteSport(Athlima athlima); //orismos methodou gia delete athliti
+
+    @Delete
+    public void deleteAthlete(Athlitis athlete);
+
+    @Delete
+    public void deleteTeam(Omada team); //orismos methodou gia delete omadas
 
     @Insert
     public void addAthlima(Athlima athlima);

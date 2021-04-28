@@ -33,8 +33,8 @@ public SportDeleteActiv() {
                     System.out.println("Could not parse " + ex);
                 }
                 Athlima sport = new Athlima();
-                sport.setSport_code(Var_sportid);
-                MainActivity.sportAppDB.sportdaotemp().deleteSport(sport);
+                sport.setSportId(Var_sportid);
+                MainActivity.theDatabase.theDaotemp().deleteSport(sport);
                 sportdeleditText.setText("");
             }
         });
