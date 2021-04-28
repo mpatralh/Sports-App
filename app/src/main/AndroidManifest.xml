@@ -4,16 +4,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Sports App"
+        android:icon="@drawable/sportimg"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApp">
-        <activity android:name=".OmadaDeleteActiv" />
-        <activity android:name=".AthleteDeleteActiv" />
-        <activity android:name=".ShowQuerries" />
-        <activity android:name=".SportDeleteActiv" />
-        <activity android:name=".DeleteOptions" />
+        <activity android:name=".input_athlima"></activity>
+        <activity android:name=".input_omada" />
+        <activity android:name=".input_athlitis" />
+        <activity android:name=".input_agwnas" />
+        <activity android:name=".chooseinput" />
+        <activity android:name=".chooseconfig" />
+        <activity android:name=".queries" />
+        <activity android:name=".config_omada" />
+        <activity android:name=".config_athilitis" />
+        <activity android:name=".config_athima" />
+        <activity android:name=".config_agwnas" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
