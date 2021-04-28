@@ -2,6 +2,7 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,11 @@ public class input_athlitis extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.input_athlitis);
+
+        Context context = getApplicationContext();
+        CharSequence text = "Success input!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
 
         inputAthlitisId=findViewById(R.id.inputAthlitisId);
         inputAthlitisName=findViewById(R.id.inputAthlitisName);
@@ -70,6 +76,7 @@ public class input_athlitis extends AppCompatActivity {
                 athlitis.setBirthYear(Var_YearOfBirth);
 
                 MainActivity.theDatabase.theDaotemp().addAthlete(athlitis);
+                toast.show();
                 inputAthlitisId.setText("");
                 inputAthlitisName.setText("");
                 inputAthlitisSurname.setText("");

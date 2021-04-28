@@ -2,6 +2,7 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,12 @@ public SportDeleteActiv() {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sport_delete);
 
+        Context context = getApplicationContext();
+        CharSequence text = "Deleted successfully!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+
+
 
         sportdeleditText = findViewById(R.id.sport_text_id_delete);
         sportdeletebutton = findViewById(R.id.delete_sp_button);
@@ -35,6 +42,7 @@ public SportDeleteActiv() {
                 Athlima sport = new Athlima();
                 sport.setSportId(Var_sportid);
                 MainActivity.theDatabase.theDaotemp().deleteSport(sport);
+                toast.show();
                 sportdeleditText.setText("");
             }
         });

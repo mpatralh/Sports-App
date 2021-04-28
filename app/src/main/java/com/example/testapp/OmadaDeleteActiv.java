@@ -2,10 +2,12 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class OmadaDeleteActiv extends AppCompatActivity {
     Button teamdeletebutton; // orizw ena antikeimeno ths taksis koubi
@@ -17,6 +19,10 @@ public class OmadaDeleteActiv extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_omada_delete);
+        Context context = getApplicationContext();
+        CharSequence text = "Deleted successfully!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
 
         teamdeleditText = findViewById(R.id.team_text_id_delete);
         teamdeletebutton = findViewById(R.id.delete_tm_button);
@@ -32,6 +38,7 @@ public class OmadaDeleteActiv extends AppCompatActivity {
                 Omada team = new Omada();
                 team.setTeamID(Var_teamid);
                 MainActivity.theDatabase.theDaotemp().deleteTeam(team);
+                toast.show();
                 teamdeleditText.setText("");
             }
         });

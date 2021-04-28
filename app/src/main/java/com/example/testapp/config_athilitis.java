@@ -2,10 +2,12 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class config_athilitis extends AppCompatActivity {
     EditText conAthlitisId;
@@ -21,6 +23,11 @@ public class config_athilitis extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.config_athilitis);
+
+        Context context = getApplicationContext();
+        CharSequence text = "Modified successfully!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
 
         conAthlitisId=findViewById(R.id.configAthleteID);
         conAthlitisName=findViewById(R.id.configAthleteName);
@@ -68,6 +75,7 @@ public class config_athilitis extends AppCompatActivity {
                 athlitis.setBirthYear(Var_YearOfBirth);
 
                 MainActivity.theDatabase.theDaotemp().updateAthliti(athlitis);
+                toast.show();
                 conAthlitisId.setText("");
                 conAthlitisName.setText("");
                 conAthlitisSurname.setText("");
