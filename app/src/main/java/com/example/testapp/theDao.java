@@ -35,4 +35,6 @@ public interface theDao {
 
     @Update
     public  void updateOmada(Omada omada);
+
+
 }

@@ -42,7 +42,7 @@ public class config_athilitis extends AppCompatActivity {
                 }
                 int Var_SportsId = 0;
                 try {
-                    Var_SportsId = Integer.parseInt(conAthlitisName.getText().toString());
+                    Var_SportsId = Integer.parseInt(conAthlitisSportsId.getText().toString());
                 } catch (NumberFormatException ex) {
                     System.out.println("Could not parse " + ex);
                 }
