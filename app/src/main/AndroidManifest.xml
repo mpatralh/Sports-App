@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApp">
+        <activity android:name=".OmadaDeleteActiv" />
+        <activity android:name=".AthleteDeleteActiv" />
+        <activity android:name=".ShowQuerries" />
+        <activity android:name=".SportDeleteActiv" />
+        <activity android:name=".DeleteOptions" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
