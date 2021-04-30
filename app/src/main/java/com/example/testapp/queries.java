@@ -2,35 +2,118 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ScrollView;
-import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
-import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import java.util.List;
 
 public class queries extends AppCompatActivity {
-    TextView textView;
+   // TextView textView;
     String result = "";
-
+    Spinner spinner;
+    ArrayAdapter<CharSequence> adapter;
+    TextView querytextView, querytextresult;
+    Button bnqueryrun;
+    int test;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.queries);
-        textView = findViewById(R.id.textView14);
 
+        //textView = findViewById(R.id.textView14);
+
+        final String[] queryArray = getResources().getStringArray(R.array.queries_description_array);
+        querytextView = findViewById(R.id.string_text);
+        spinner = findViewById(R.id.querry_spinner);
+        adapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.queries_array, R.layout.support_simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                querytextView.setText(queryArray[position]);
+                test = position+1;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        querytextresult = findViewById(R.id.textOfResults);
+        bnqueryrun = findViewById(R.id.run_button);
+          querytextresult.setMovementMethod(new ScrollingMovementMethod()); //energopoihsh scroll leitourgias sto textview twn results
+        bnqueryrun.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View v) {
+                querytextresult.setText("test" + test);
+                String result = "";
+                switch (test) {
+                    case 1:
+                        List<Athlima> athlimalista = MainActivity.theDatabase.theDaotemp().getAthlima();
+                        for (Athlima i : athlimalista) {
+                            int athlimaCode = i.getSportId();
+                            String athlimaName = i.getSportName();
+                            String sportKind = i.getSportKind();
+                            String sportGender = i.getSportFilo();
+                            result = result + "\n SportID:" + athlimaCode + "\n SportName:" + athlimaName + "\n SportKind:" + sportKind + "\n SportGender:" + sportGender + "\n";
+                        }
+                        querytextresult.setText(result);
+                        break;
+                    case 2:
+                        List<Athlitis> athlitislista = MainActivity.theDatabase.theDaotemp().getUsers();
+                        for (Athlitis i : athlitislista) {
+                            int code = i.getAthl_id();
+                            String name = i.getName();
+                            String surname = i.getSurname();
+                            String town = i.getCity();
+                            String country = i.getCountry();
+                            int sportid = i.getSp_id();
+                            int yearofB = i.getBirthYear();
+                            result = result + "\n AthlitisID: " + code + "\n Name: " + name + "\n Surname: " + surname + "\n Town:" + town + "\n Country:" + country + "\n SportsID:" + sportid + "\n YearOfBirth:" + yearofB + "\n";
+                            querytextresult.setText(result);
+                            break;
+                        }
+                    case 3:
+                        List<Omada> teamlista = MainActivity.theDatabase.theDaotemp().getOmada();
+                        for (Omada i : teamlista) {
+                            int teamID = i.getTeamID();
+                            String teamName = i.getTeamName();
+                            String teamCountry = i.getTeamCountry();
+                            String teamTown = i.getTeamTown();
+                            int teamSportID = i.getSportId();
+                            String teamStadium = i.getOnomaGipedou();
+                            int teamEstablishm = i.getEtosIdrisis();
+                            result = result + "\n TeamID: " + teamID + "\n TeamName: " + teamName + "\n TeamCountry: " + teamCountry + "\n TeamTowm:" + teamTown + "\n TeamSportID:" + teamSportID + "\n TeamStadium:" + teamStadium + "\n TeamEstablishment:" + teamEstablishm + "\n";
+                        }
+                        querytextresult.setText(result);
+                        break;
+                }
+            }
+        });
+
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
 
         List<Athlitis> athlitis = MainActivity.theDatabase.theDaotemp().getUsers();
         for (Athlitis i : athlitis) {
@@ -71,4 +154,6 @@ public class queries extends AppCompatActivity {
 
 
     }
-}
+    }
+    */
+

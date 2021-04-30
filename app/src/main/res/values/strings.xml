@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Sport App</string>
+    <string-array name="queries_array">
+   <item>query 1</item>
+    <item> query 2</item>
+    <item> query 3</item>
+    <item> query 4</item>
+    <item> query 5</item>
+    <item> query 6</item>
+    </string-array>
+
+    <string-array name="queries_description_array">
+        <item> 1. Εμφανίστε τον πίνακα με όλα τα Αθλήματα.</item>
+        <item> 2. Εμφανίστε τον πίνακα με όλους τους Αθλητές.</item>
+        <item> 3. Εμφανίστε τον πίνακα με όλες τις Ομάδες.</item>
+       <!-- <item> 4. Εμφανίστε τα ονόματα και τις ηλικίες όλων των ναυτικών.</item>
+        <item> 5. Εμφανίστε όλα τα στοιχεία των ναυτικών με κλιμάκιο (rating) μεγαλύτερο του 7.</item>
+        <item> 6. Εμφανίστε τα ονόματα των ναυτικών που έχουν κάνει κράτηση στη βάρκα με κωδικό 103.</item> -->
+
+    </string-array>
 </resources>

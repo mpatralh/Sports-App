@@ -1,19 +1,26 @@
 package com.example.testapp;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
-
-@Entity
+//orismos ksenou kleidiou id tou sport apo ton pinaka sport
+@Entity(foreignKeys = @ForeignKey(entity = Athlima.class,
+        parentColumns = "SportId",
+        childColumns = "sportId",
+        onDelete = ForeignKey.CASCADE,
+        onUpdate = ForeignKey.CASCADE))
 public class Omada {
+
     @PrimaryKey
-    private int teamID;
+    private int teamID; @NonNull
     private String teamName;
     private String onomaGipedou;
     private String teamCountry;
     private String teamTown;
     private int etosIdrisis;
-    private int sportId;
+    private int sportId; @NonNull
 
 
     public int getSportId() {

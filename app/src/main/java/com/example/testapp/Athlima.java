@@ -1,5 +1,6 @@
 package com.example.testapp;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -8,7 +9,7 @@ import androidx.room.PrimaryKey;
 public class Athlima {
 
     @PrimaryKey
-    private int SportId;
+    private int SportId; @NonNull
     @ColumnInfo(name = "spName")
     private String SportName;
     @ColumnInfo(name = "spKind")

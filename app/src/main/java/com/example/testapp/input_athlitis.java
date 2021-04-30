@@ -59,6 +59,8 @@ public class input_athlitis extends AppCompatActivity {
                 String Var_Town= inputAthlitisTown.getText().toString();
                 String Var_Country=inputAthlitisCountry.getText().toString();
 
+                try {
+
 
                 Athlitis athlitis = new Athlitis();
                 athlitis.setAthl_id(Var_athlitisId);
@@ -68,8 +70,13 @@ public class input_athlitis extends AppCompatActivity {
                 athlitis.setCountry(Var_Country);
                 athlitis.setSp_id(Var_SportsId);
                 athlitis.setBirthYear(Var_YearOfBirth);
+                MainActivity.theDatabase.theDaotemp().addAthlete(athlitis);}
+                catch (Exception e) {
+                    String message = e.getMessage();
+                    Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
+                }
 
-                MainActivity.theDatabase.theDaotemp().addAthlete(athlitis);
+
                 inputAthlitisId.setText("");
                 inputAthlitisName.setText("");
                 inputAthlitisSurname.setText("");

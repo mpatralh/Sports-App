@@ -1,14 +1,19 @@
 package com.example.testapp;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
-@Entity
+@Entity(foreignKeys = @ForeignKey(entity = Athlima.class,
+        parentColumns = "SportId",
+        childColumns = "athlSp_id",
+        onDelete = ForeignKey.CASCADE,
+        onUpdate = ForeignKey.CASCADE))
 public class Athlitis {
 
     @PrimaryKey
-
-    private int Athl_id;
+    private int Athl_id; @NonNull
     @ColumnInfo(name="athlName")
     private String name;
     @ColumnInfo(name="athlSurname")
@@ -17,8 +22,10 @@ public class Athlitis {
     private String city;
     @ColumnInfo(name="athlCountry")
     private String country;
+
+
     @ColumnInfo(name="athlSp_id")
-    private int Sp_id;
+    private int Sp_id; @NonNull
     @ColumnInfo(name="athlBirthYear")
     private int birthYear;
     // @ColumnInfo(Athl_id="athlId");

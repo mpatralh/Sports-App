@@ -63,6 +63,14 @@ public class MainActivity extends AppCompatActivity {
                         return true;
 
                     }
+                    case R.id.querys: {
+                        displayMessage("You have to choose what to ask");
+                        startActivity(new Intent(MainActivity.this,queries.class));
+                        drawerLayout.closeDrawers();
+                        return true;
+
+                    }
+
 
 
                 }

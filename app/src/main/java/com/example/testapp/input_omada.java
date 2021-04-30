@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class input_omada extends AppCompatActivity {
     EditText inputTeamId;
@@ -56,7 +57,7 @@ public class input_omada extends AppCompatActivity {
                 String Var_stadiumname=inputTeamStadium.getText().toString();
                 String Var_teamTown=inputTeamTown.getText().toString();
                 String Var_teamCountry=inputTeamCountry.getText().toString();
-
+                try{
                 Omada omada=new Omada();
                 omada.setTeamID(Var_teamId);
                 omada.setTeamName(Var_teamName);
@@ -65,8 +66,13 @@ public class input_omada extends AppCompatActivity {
                 omada.setOnomaGipedou(Var_stadiumname);
                 omada.setEtosIdrisis(Var_establishm);
                 omada.setSportId(Var_sportid);
-
                 MainActivity.theDatabase.theDaotemp().addOmada(omada);
+                }
+                catch(Exception e){
+                    String message = e.getMessage();
+                    Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
+                }
+
                 inputTeamId.setText("");
                 inputTeamName.setText("");
                 inputTeamEstablishm.setText("");

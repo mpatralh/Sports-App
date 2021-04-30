@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class input_athlima extends AppCompatActivity {
     EditText inputAthlimaId;
@@ -36,6 +37,8 @@ public class input_athlima extends AppCompatActivity {
                 String Var_SpName=inputAthlimaName.getText().toString();
                 String Var_Kind=inputAthlimaKind.getText().toString();
                 String Var_AthlimaFylo=inputAthlimaFylo.getText().toString();
+                try {
+
 
                 Athlima athlima=new Athlima();
                 athlima.setSportId(Var_athlimaId);
@@ -43,7 +46,11 @@ public class input_athlima extends AppCompatActivity {
                 athlima.setSportKind(Var_Kind);
                 athlima.setSportFilo(Var_AthlimaFylo);
 
-                MainActivity.theDatabase.theDaotemp().addAthlima(athlima);
+                MainActivity.theDatabase.theDaotemp().addAthlima(athlima); }
+                catch(Exception e){
+                    String message = e.getMessage();
+                    Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
+                }
                 inputAthlimaId.setText("");
                 inputAthlimaName.setText("");
                 inputAthlimaKind.setText("");
