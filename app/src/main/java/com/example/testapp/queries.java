@@ -60,18 +60,21 @@ public class queries extends AppCompatActivity {
                 String result = "";
                 switch (test) {
                     case 1:
+                        int c=0;
                         List<Athlima> athlimalista = MainActivity.theDatabase.theDaotemp().getAthlima();
                         for (Athlima i : athlimalista) {
                             int athlimaCode = i.getSportId();
                             String athlimaName = i.getSportName();
                             String sportKind = i.getSportKind();
                             String sportGender = i.getSportFilo();
-                            result = result + "\n SportID:" + athlimaCode + "\n SportName:" + athlimaName + "\n SportKind:" + sportKind + "\n SportGender:" + sportGender + "\n";
+                            c++;
+                            result = result + "\n ΑΘΛΗΜΑ " + c + ": " + "\n SportID:" + athlimaCode + "\n SportName:" + athlimaName + "\n SportKind:" + sportKind + "\n SportGender:" + sportGender + "\n";
                         }
                         querytextresult.setText(result);
                         break;
                     case 2:
-                        List<Athlitis> athlitislista = MainActivity.theDatabase.theDaotemp().getUsers();
+                        int h=0;
+                        List<Athlitis> athlitislista = MainActivity.theDatabase.theDaotemp().getAthlites();
                         for (Athlitis i : athlitislista) {
                             int code = i.getAthl_id();
                             String name = i.getName();
@@ -80,12 +83,14 @@ public class queries extends AppCompatActivity {
                             String country = i.getCountry();
                             int sportid = i.getSp_id();
                             int yearofB = i.getBirthYear();
-                            result = result + "\n AthlitisID: " + code + "\n Name: " + name + "\n Surname: " + surname + "\n Town:" + town + "\n Country:" + country + "\n SportsID:" + sportid + "\n YearOfBirth:" + yearofB + "\n";
+                            result = result + "\n ΑΘΛΗΤΗΣ " + h + ": " + "\n AthlitisID: " + code + "\n Name: " + name + "\n Surname: " + surname + "\n Town:" + town + "\n Country:" + country + "\n SportsID:" + sportid + "\n YearOfBirth:" + yearofB + "\n";
+                        }
                             querytextresult.setText(result);
                             break;
-                        }
+
                     case 3:
                         List<Omada> teamlista = MainActivity.theDatabase.theDaotemp().getOmada();
+                        int g = 0;
                         for (Omada i : teamlista) {
                             int teamID = i.getTeamID();
                             String teamName = i.getTeamName();
@@ -94,7 +99,37 @@ public class queries extends AppCompatActivity {
                             int teamSportID = i.getSportId();
                             String teamStadium = i.getOnomaGipedou();
                             int teamEstablishm = i.getEtosIdrisis();
-                            result = result + "\n TeamID: " + teamID + "\n TeamName: " + teamName + "\n TeamCountry: " + teamCountry + "\n TeamTowm:" + teamTown + "\n TeamSportID:" + teamSportID + "\n TeamStadium:" + teamStadium + "\n TeamEstablishment:" + teamEstablishm + "\n";
+                            result = result + "\n ΟΜΑΔΑ " + g + ": " + "\n TeamID: " + teamID + "\n TeamName: " + teamName + "\n TeamCountry: " + teamCountry + "\n TeamTowm:" + teamTown + "\n TeamSportID:" + teamSportID + "\n TeamStadium:" + teamStadium + "\n TeamEstablishment:" + teamEstablishm + "\n";
+                        }
+                        querytextresult.setText(result);
+                        break;
+                    case 4:
+                        List<Integer> athletelist = MainActivity.theDatabase.theDaotemp().getAthleteCount();
+
+                        for (Integer i : athletelist) {
+                      //   int count = i.getAthlC(); //apothikeysh sti metavliti count tou apotelesmatos pou epistrefetai apo tin count stin metavliti athlC
+                         result = result  + "ΑΘΡΟΙΣΜΑ ΑΘΛΗΤΩΝ :" + i;
+                        }
+                        querytextresult.setText(result);
+                        break;
+                    case 5:
+                        List<SportSelection> selectFemSp = MainActivity.theDatabase.theDaotemp().getFemaleSports();
+
+                        for (SportSelection i : selectFemSp) {
+                            String name = i.getName(); //apothikeysh sti metavliti count tou apotelesmatos pou epistrefetai apo tin count stin metavliti athlC
+                            int id = i.getSid();
+                            result = result  + "\n ΟΝΟΜΑ ΑΘΛΗΜΑΤΟΣ :" + name + "\n ΜΕ ID : " + id + "\n";
+                        }
+                        querytextresult.setText(result);
+                        break;
+                    case 6:
+                        List<OmadaSelection> selectSpesOm = MainActivity.theDatabase.theDaotemp().getSpecificOmada();
+
+                        for (OmadaSelection i : selectSpesOm) {
+                           String sport = i.getSport();
+                           String team = i.getTeam();
+                           String athlete = i.getAthlete();
+                            result = result  + "\n ΟΝΟΜΑ ΑΘΛΗΜΑΤΟΣ :" + sport + "\n ΟΝΟΜΑ ΟΜΑΔΑΣ : " + team + "\n ΟΝΟΜΑ ΑΘΛΗΤΗ :" + athlete + "\n";
                         }
                         querytextresult.setText(result);
                         break;

@@ -15,8 +15,5 @@
             android:title="delete"
             android:icon="@mipmap/icondelete"/>
 
-        <item android:id="@+id/querys"
-            android:title="query questions"
-            android:icon="@mipmap/icondelete"/>
 
 </menu>
