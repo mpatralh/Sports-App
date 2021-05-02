@@ -41,7 +41,8 @@ public interface theDao {
 
     @Query("select * from omada")
     public  List<Omada> getOmada();
-
+    @Query("select teamName as team from Omada where teamName='Olimpiakos'")
+    public List<String> getOlimpiakos();
     @Update
     public  void updateOmada(Omada omada);
 

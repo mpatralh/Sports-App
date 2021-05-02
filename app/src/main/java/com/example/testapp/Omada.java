@@ -78,4 +78,8 @@ public class Omada {
     public void setTeamTown(String teamTown) {
         this.teamTown = teamTown;
     }
+
+
+
+
 }
