@@ -2,6 +2,7 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,11 @@ public class input_athlitis extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.input_athlitis);
+
+        Context context = getApplicationContext();
+        CharSequence text = "Success input!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
 
         inputAthlitisId=findViewById(R.id.inputAthlitisId);
         inputAthlitisName=findViewById(R.id.inputAthlitisName);
@@ -59,8 +65,6 @@ public class input_athlitis extends AppCompatActivity {
                 String Var_Town= inputAthlitisTown.getText().toString();
                 String Var_Country=inputAthlitisCountry.getText().toString();
 
-                try {
-
 
                 Athlitis athlitis = new Athlitis();
                 athlitis.setAthl_id(Var_athlitisId);
@@ -70,13 +74,9 @@ public class input_athlitis extends AppCompatActivity {
                 athlitis.setCountry(Var_Country);
                 athlitis.setSp_id(Var_SportsId);
                 athlitis.setBirthYear(Var_YearOfBirth);
-                MainActivity.theDatabase.theDaotemp().addAthlete(athlitis);}
-                catch (Exception e) {
-                    String message = e.getMessage();
-                    Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
-                }
 
-
+                MainActivity.theDatabase.theDaotemp().addAthlete(athlitis);
+                toast.show();
                 inputAthlitisId.setText("");
                 inputAthlitisName.setText("");
                 inputAthlitisSurname.setText("");

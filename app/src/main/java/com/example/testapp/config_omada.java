@@ -2,10 +2,12 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class config_omada extends AppCompatActivity {
     EditText conTeamId;
@@ -21,6 +23,11 @@ public class config_omada extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.config_omada);
+
+        Context context = getApplicationContext();
+        CharSequence text = "Modified successfully!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
 
         conTeamId=findViewById(R.id.configTeamID);
         conTeamName=findViewById(R.id.configTeamName);
@@ -67,6 +74,7 @@ public class config_omada extends AppCompatActivity {
                 omada.setSportId(Var_sportid);
 
                 MainActivity.theDatabase.theDaotemp().updateOmada(omada);
+                toast.show();
                 conTeamId.setText("");
                 conTeamName.setText("");
                 conTeamEstablishm.setText("");

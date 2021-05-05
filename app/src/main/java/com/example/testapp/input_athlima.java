@@ -2,6 +2,7 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,10 @@ public class input_athlima extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.input_athlima);
+        Context context = getApplicationContext();
+        CharSequence text = "Success input!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
 
         inputAthlimaId=findViewById(R.id.inputAthlimaID);
         inputAthlimaName=findViewById(R.id.inputAthlimaName);
@@ -37,8 +42,6 @@ public class input_athlima extends AppCompatActivity {
                 String Var_SpName=inputAthlimaName.getText().toString();
                 String Var_Kind=inputAthlimaKind.getText().toString();
                 String Var_AthlimaFylo=inputAthlimaFylo.getText().toString();
-                try {
-
 
                 Athlima athlima=new Athlima();
                 athlima.setSportId(Var_athlimaId);
@@ -46,11 +49,8 @@ public class input_athlima extends AppCompatActivity {
                 athlima.setSportKind(Var_Kind);
                 athlima.setSportFilo(Var_AthlimaFylo);
 
-                MainActivity.theDatabase.theDaotemp().addAthlima(athlima); }
-                catch(Exception e){
-                    String message = e.getMessage();
-                    Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
-                }
+                MainActivity.theDatabase.theDaotemp().addAthlima(athlima);
+                toast.show();
                 inputAthlimaId.setText("");
                 inputAthlimaName.setText("");
                 inputAthlimaKind.setText("");

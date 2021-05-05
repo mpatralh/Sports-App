@@ -2,10 +2,12 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class config_athima extends AppCompatActivity {
     EditText configAthlimaId;
@@ -18,6 +20,11 @@ public class config_athima extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.config_athima);
+
+        Context context = getApplicationContext();
+        CharSequence text = "Modified successfully!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
 
         configAthlimaId=findViewById(R.id.configSportID);
         configAthlimaName=findViewById(R.id.configSportName);
@@ -45,6 +52,7 @@ public class config_athima extends AppCompatActivity {
                 athlima.setSportFilo(Var_AthlimaFylo);
 
                 MainActivity.theDatabase.theDaotemp().updateAthlima(athlima);
+                toast.show();
                 configAthlimaId.setText("");
                 configAthlimaName.setText("");
                 configAthlimaKind.setText("");

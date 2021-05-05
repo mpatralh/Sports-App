@@ -2,6 +2,7 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,11 @@ public class input_omada extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.input_omada);
+
+        Context context = getApplicationContext();
+        CharSequence text = "Success input!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
 
         inputTeamId=findViewById(R.id.inputTeamId);
         inputTeamName=findViewById(R.id.inputTeamName);
@@ -57,7 +63,7 @@ public class input_omada extends AppCompatActivity {
                 String Var_stadiumname=inputTeamStadium.getText().toString();
                 String Var_teamTown=inputTeamTown.getText().toString();
                 String Var_teamCountry=inputTeamCountry.getText().toString();
-                try{
+
                 Omada omada=new Omada();
                 omada.setTeamID(Var_teamId);
                 omada.setTeamName(Var_teamName);
@@ -66,13 +72,9 @@ public class input_omada extends AppCompatActivity {
                 omada.setOnomaGipedou(Var_stadiumname);
                 omada.setEtosIdrisis(Var_establishm);
                 omada.setSportId(Var_sportid);
-                MainActivity.theDatabase.theDaotemp().addOmada(omada);
-                }
-                catch(Exception e){
-                    String message = e.getMessage();
-                    Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
-                }
 
+                MainActivity.theDatabase.theDaotemp().addOmada(omada);
+                toast.show();
                 inputTeamId.setText("");
                 inputTeamName.setText("");
                 inputTeamEstablishm.setText("");
