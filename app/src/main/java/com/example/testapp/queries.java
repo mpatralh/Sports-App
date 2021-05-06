@@ -15,7 +15,7 @@ import android.widget.TextView;
 import java.util.List;
 
 public class queries extends AppCompatActivity {
-   // TextView textView;
+    // TextView textView;
     String result = "";
     Spinner spinner;
     ArrayAdapter<CharSequence> adapter;
@@ -51,7 +51,7 @@ public class queries extends AppCompatActivity {
 
         querytextresult = findViewById(R.id.textOfResults);
         bnqueryrun = findViewById(R.id.run_button);
-          querytextresult.setMovementMethod(new ScrollingMovementMethod()); //energopoihsh scroll leitourgias sto textview twn results
+        querytextresult.setMovementMethod(new ScrollingMovementMethod()); //energopoihsh scroll leitourgias sto textview twn results
         bnqueryrun.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -85,8 +85,8 @@ public class queries extends AppCompatActivity {
                             int yearofB = i.getBirthYear();
                             result = result + "\n ΑΘΛΗΤΗΣ " + h + ": " + "\n AthlitisID: " + code + "\n Name: " + name + "\n Surname: " + surname + "\n Town:" + town + "\n Country:" + country + "\n SportsID:" + sportid + "\n YearOfBirth:" + yearofB + "\n";
                         }
-                            querytextresult.setText(result);
-                            break;
+                        querytextresult.setText(result);
+                        break;
 
                     case 3:
                         List<Omada> teamlista = MainActivity.theDatabase.theDaotemp().getOmada();
@@ -107,8 +107,8 @@ public class queries extends AppCompatActivity {
                         List<Integer> athletelist = MainActivity.theDatabase.theDaotemp().getAthleteCount();
 
                         for (Integer i : athletelist) {
-                      //   int count = i.getAthlC(); //apothikeysh sti metavliti count tou apotelesmatos pou epistrefetai apo tin count stin metavliti athlC
-                         result = result  + "ΑΘΡΟΙΣΜΑ ΑΘΛΗΤΩΝ :" + i;
+                            //   int count = i.getAthlC(); //apothikeysh sti metavliti count tou apotelesmatos pou epistrefetai apo tin count stin metavliti athlC
+                            result = result  + "ΑΘΡΟΙΣΜΑ ΑΘΛΗΤΩΝ :" + i;
                         }
                         querytextresult.setText(result);
                         break;
@@ -126,9 +126,9 @@ public class queries extends AppCompatActivity {
                         List<OmadaSelection> selectSpesOm = MainActivity.theDatabase.theDaotemp().getSpecificOmada();
 
                         for (OmadaSelection i : selectSpesOm) {
-                           String sport = i.getSport();
-                           String team = i.getTeam();
-                           String athlete = i.getAthlete();
+                            String sport = i.getSport();
+                            String team = i.getTeam();
+                            String athlete = i.getAthlete();
                             result = result  + "\n ΟΝΟΜΑ ΑΘΛΗΜΑΤΟΣ :" + sport + "\n ΟΝΟΜΑ ΟΜΑΔΑΣ : " + team + "\n ΟΝΟΜΑ ΑΘΛΗΤΗ :" + athlete + "\n";
                         }
                         querytextresult.setText(result);

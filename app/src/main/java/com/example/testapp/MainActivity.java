@@ -61,9 +61,18 @@ public class MainActivity extends AppCompatActivity {
                         displayMessage("You have to choose what to config");
                         startActivity(new Intent(MainActivity.this,chooseconfig.class));
                         drawerLayout.closeDrawers();
+                       break;
+
+                    }
+
+                    case R.id.map: {
+                        displayMessage("You opened Google Maps");
+                        startActivity(new Intent(MainActivity.this,MapsActivity.class));
+                        drawerLayout.closeDrawers();
                         return true;
 
                     }
+
 
 
                 }

@@ -48,18 +48,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng peiraias = new LatLng(37.942986, 23.646983);
         //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        mMap.addMarker(new MarkerOptions().position(thessaloniki).title("Marker in Thessaloniki, Home"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(thessaloniki));
+        mMap.addMarker(new MarkerOptions().position(thessaloniki).title("Marker in Thessaloniki,Home"));
+
 
         Omada om = new Omada();
         List<String> teamlistMap = MainActivity.theDatabase.theDaotemp().getOlimpiakos();
         for (String i : teamlistMap) {
             String Name = i;
 
-                mMap.addMarker(new MarkerOptions().position(peiraias).title("Marker in Pireaus Edra Of " + i));
+            mMap.addMarker(new MarkerOptions().position(peiraias).title("Marker in Pireaus Edra Of " + i));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(peiraias,10f));
-            }
         }
+    }
 
 
         }
