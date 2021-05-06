@@ -45,10 +45,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Add a marker in Sydney and move the camera
         //LatLng sydney = new LatLng(-34, 151);
         LatLng thessaloniki = new LatLng( 40.629269, 22.947412);
-        LatLng athina = new LatLng(37.983917, 23.72936);
+        LatLng peiraias = new LatLng(37.942986, 23.646983);
         //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        mMap.addMarker(new MarkerOptions().position(thessaloniki).title("Marker in Thessaloniki"));
+        mMap.addMarker(new MarkerOptions().position(thessaloniki).title("Marker in Thessaloniki, Home"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(thessaloniki));
 
         Omada om = new Omada();
@@ -56,8 +56,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         for (String i : teamlistMap) {
             String Name = i;
 
-                mMap.addMarker(new MarkerOptions().position(athina).title("Marker in Athens Edra Of " + i));
-
+                mMap.addMarker(new MarkerOptions().position(peiraias).title("Marker in Pireaus Edra Of " + i));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(peiraias,10f));
             }
         }
 
