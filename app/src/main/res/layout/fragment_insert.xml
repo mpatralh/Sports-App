@@ -9,14 +9,14 @@
         android:id="@+id/insertGameButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Insert new Game"
+        android:text="Insert new Match"
         android:layout_marginTop="250dp"
         android:layout_marginLeft="130dp"
         />
     <TextView
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Insert a New Game of a Team or Individual Sport"
+        android:text="Insert a New Match of a Team or Individual Sport"
         android:textAlignment="center"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
