@@ -30,7 +30,7 @@
     <Button
         android:id="@+id/insertTeamSportButton"
         android:layout_width="150dp"
-        android:layout_height="80"
+        android:layout_height="80dp"
         android:text="Delete Team Sport Match"
         android:layout_marginTop="220dp"
         android:layout_marginLeft="130dp"
