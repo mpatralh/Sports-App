@@ -23,7 +23,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="110dp"
         android:layout_marginLeft="80dp"
-        android:text="CHOOSE TYPE OF MATCH TO INPUT"
+        android:text="CHOOSE TYPE OF MATCH TO CONFIG"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -33,7 +33,7 @@
         android:id="@+id/insertTeamSportButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Insert new Team Sport Match"
+        android:text="CONFIG new Team Sport Match"
         android:layout_marginTop="220dp"
         android:layout_marginLeft="130dp"
         />
@@ -42,7 +42,7 @@
         android:id="@+id/insertInSportButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Insert new Individual Sport Match"
+        android:text="CONFIG new Individual Sport Match"
         android:layout_marginTop="350dp"
         android:layout_marginLeft="130dp"
         />

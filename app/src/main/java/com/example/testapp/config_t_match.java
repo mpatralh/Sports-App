@@ -8,23 +8,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class choose_delete_match extends Fragment {
+public class config_t_match extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
-    public choose_delete_match() {
-        // Required empty public constructor
+    public config_t_match() {
+
     }
-    // TODO: Rename and change types and number of parameters
-    public static choose_delete_match newInstance(String param1, String param2) {
-        choose_delete_match fragment = new choose_delete_match();
+
+    public static config_t_match newInstance(String param1, String param2) {
+        config_t_match fragment = new config_t_match();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -45,6 +42,6 @@ public class choose_delete_match extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.choose_delete_match, container, false);
+        return inflater.inflate(R.layout.config_t_match, container, false);
     }
 }
