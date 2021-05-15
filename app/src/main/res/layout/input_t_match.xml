@@ -66,10 +66,10 @@
         android:text="Team A"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="299dp" />
+        tools:layout_editor_absoluteY="298dp" />
 
     <EditText
-        android:id="@+id/inputAthlitisId"
+        android:id="@+id/Sport"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="160dp"
@@ -81,7 +81,7 @@
         tools:layout_editor_absoluteY="246dp" />
 
     <EditText
-        android:id="@+id/inputAthlitisName"
+        android:id="@+id/inputTeamAName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputAthlitisId"
         android:layout_width="160dp"
@@ -114,7 +114,7 @@
         android:inputType="textPersonName"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="361dp" />
+        tools:layout_editor_absoluteY="352dp" />
 
     <Button
         android:id="@+id/inputAthlitisButton"
@@ -205,6 +205,30 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="87dp"
         tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Team B score"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <EditText
+        android:id="@+id/inputAthlitisTown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputAthlitisSurname"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="450dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
