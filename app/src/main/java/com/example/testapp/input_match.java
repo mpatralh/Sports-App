@@ -11,7 +11,7 @@ public class input_match extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.input_match);
+        setContentView(R.layout.choose_input_match);
     }
 
     public class input_match extends Fragment implements View.OnClickListener {

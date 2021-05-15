@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_insert">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/sportimg"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="110dp"
+        android:text="CHOOSE TYPE OF MATCH TO CONFIG"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/insertTeamSportButton"
+        android:layout_width="150dp"
+        android:layout_height="80"
+        android:text="Config Team Sport Match"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="130dp"
+        />
+
+    <Button
+        android:id="@+id/insertInSportButton"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Config Individual Sport Match"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="130dp"
+        />
+
+
+</FrameLayout>
