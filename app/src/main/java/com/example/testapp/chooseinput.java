@@ -24,7 +24,7 @@ public class chooseinput extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseinput.this, input_agwnas.class));
+                startActivity(new Intent(chooseinput.this, input_match.class));
             }
         });
 

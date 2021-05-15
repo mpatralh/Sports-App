@@ -35,7 +35,7 @@
         <activity android:name=".input_athlima" />
         <activity android:name=".input_omada" />
         <activity android:name=".input_athlitis" />
-        <activity android:name=".input_agwnas" />
+        <activity android:name=".input_match" />
         <activity android:name=".chooseinput" />
         <activity android:name=".chooseconfig" />
         <activity android:name=".queries" />
