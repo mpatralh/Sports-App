@@ -69,7 +69,7 @@
         tools:layout_editor_absoluteY="298dp" />
 
     <EditText
-        android:id="@+id/inputAthlitisId"
+        android:id="@+id/Sport"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="160dp"
@@ -81,7 +81,7 @@
         tools:layout_editor_absoluteY="246dp" />
 
     <EditText
-        android:id="@+id/inputAthlitisName"
+        android:id="@+id/inputTeamAName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputAthlitisId"
         android:layout_width="160dp"
@@ -212,10 +212,23 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:text="Team B"
+        android:text="Team B score"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="56dp"
         tools:layout_editor_absoluteY="403dp" />
+
+    <EditText
+        android:id="@+id/inputAthlitisTown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputAthlitisSurname"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="450dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
