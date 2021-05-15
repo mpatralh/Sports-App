@@ -21,29 +21,29 @@
         android:id="@+id/textView13"
         android:layout_width="200dp"
         android:layout_height="70dp"
-        android:layout_marginLeft="110dp"
+        android:layout_marginLeft="105dp"
         android:layout_marginTop="110dp"
-        android:text="CHOOSE TYPE OF MATCH TO INPUT"
+        android:textAlignment="center"
+        android:text="INSERT MATCH ID TO DELETE"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/inputMatchIDToDelete"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="125dp"/>
 
     <Button
-        android:id="@+id/insertTeamSportButton"
-        android:layout_width="150dp"
+        android:id="@+id/deleteTeamSportButton"
+        android:layout_width="200dp"
         android:layout_height="80dp"
-        android:text="input Team Sport Match"
-        android:layout_marginTop="220dp"
-        android:layout_marginLeft="130dp"
-        />
-
-    <Button
-        android:id="@+id/insertInSportButton"
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:text="input Individual Sport Match"
+        android:text="Delete this Individual Sport Match"
         android:layout_marginTop="350dp"
-        android:layout_marginLeft="130dp"
+        android:layout_marginLeft="105dp"
         />
-
-
 </FrameLayout>

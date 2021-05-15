@@ -1,5 +1,29 @@
 <resources>
     <string name="app_name">Sport App</string>
+<<<<<<< Updated upstream
+=======
+    <string-array name="queries_array">
+        <item>ΑΘΛΗΜΑΤΑ</item>
+        <item>ΑΘΛΗΤΕΣ</item>
+        <item>ΟΜΑΔΕΣ</item>
+        <item>ΠΡΩΤΟ ΕΡΩΤΗΜΑ</item>
+        <item>ΔΕΥΤΕΡΟ ΕΡΩΤΗΜΑ</item>
+        <item>ΤΡΙΤΟ ΕΡΩΤΗΜΑ</item>
+    </string-array>
+
+    <string-array name="queries_description_array">
+        <item> 1. Εμφανίστε τον πίνακα με όλα τα Αθλήματα.</item>
+        <item> 2. Εμφανίστε τον πίνακα με όλους τους Αθλητές.</item>
+        <item> 3. Εμφανίστε τον πίνακα με όλες τις Ομάδες.</item>
+        <item> 4. Εμφανίστε το σύνολο των αθλητών με έτος γέννησης > 1980 .</item>
+        <item> 5. Εμφανίστε τα ονόματα και id των αθλημάτων στα οποία δεν συμμετέχουν άνδρες και το όνομα τους αρχίζει από "Τ".</item>
+        <item> 6. Εμφανίστε όνομα ομάδας,αθλητή και αθλήματος, όπου η ομάδα έχει έδρα Thessaloniki ΚΑΙ σε αυτή παίζει Αθλητής από την Elvetia
+        ο οποίος συμμετέχει σε ομαδικό άθλημα</item>
+
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+>>>>>>> Stashed changes
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

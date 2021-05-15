@@ -206,28 +206,24 @@
 
     <TextView
         android:id="@+id/TeamBscoretext"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:text="Team B score"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="402dp" />
+        tools:layout_editor_absoluteY="402dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/inputTeamBscore"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputAthlitisSurname"
         android:layout_width="80dp"
         android:layout_height="35dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="445dp" />
+        tools:layout_editor_absoluteY="445dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-</FrameLayout>
