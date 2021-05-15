@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".input_t_match">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/sportimg"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="-2dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/SportIDtext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:text="SportID"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="197dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Sporttext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:foregroundGravity="fill_horizontal"
+        android:text="Sport"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="245dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Datetext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Date"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="151dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TeamAtext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Team A"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="298dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inputSport"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="246dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inputTeamAName"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="298dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inputMatchCountry"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="103dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inputTeamBName"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="352dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/inputOKButton"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="OK"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="547dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/MatchCitytext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="City"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="59dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inputMatchDate"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="151dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/MatchCountrytext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Country"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="103dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TeamBNametext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Team B"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="352dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inputMatchCity"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="58dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inputTeamSportID"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="197dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/inputmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIG TEAM SPORT MATCH"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TeamAscoretext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Team A score"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="403dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/TeamAscoreinput"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="445dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TeamBscoretext"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Team B score"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="402dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inputTeamBscore"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="445dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
