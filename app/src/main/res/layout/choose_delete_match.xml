@@ -15,31 +15,23 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:src="@drawable/sportimg"
-        app:layout_constraintEnd_toStartOf="@+id/spinner"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="250dp"
+        android:layout_width="200dp"
         android:layout_height="70dp"
+        android:layout_marginLeft="110dp"
         android:layout_marginTop="110dp"
-        android:layout_marginLeft="80dp"
-        android:text="CHOOSE TYPE OF MATCH TO INPUT"
+        android:text="CHOOSE TYPE OF MATCH TO DELETE"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center_horizontal" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/insertTeamSportButton"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Insert new Team Sport Match"
+        android:layout_height="80"
+        android:text="Delete Team Sport Match"
         android:layout_marginTop="220dp"
         android:layout_marginLeft="130dp"
         />
@@ -47,8 +39,8 @@
     <Button
         android:id="@+id/insertInSportButton"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Insert new Individual Sport Match"
+        android:layout_height="80dp"
+        android:text="Delete Individual Sport Match"
         android:layout_marginTop="350dp"
         android:layout_marginLeft="130dp"
         />
