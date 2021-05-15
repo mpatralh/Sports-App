@@ -121,11 +121,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="110dp"
-        android:layout_height="40dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:text="OK"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="547dp" />
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="517dp" />
 
     <TextView
         android:id="@+id/textView5"
