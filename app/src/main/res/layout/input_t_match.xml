@@ -66,7 +66,7 @@
         android:text="Team A"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="299dp" />
+        tools:layout_editor_absoluteY="298dp" />
 
     <EditText
         android:id="@+id/inputAthlitisId"
@@ -114,7 +114,7 @@
         android:inputType="textPersonName"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="361dp" />
+        tools:layout_editor_absoluteY="352dp" />
 
     <Button
         android:id="@+id/inputAthlitisButton"
@@ -205,6 +205,17 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="87dp"
         tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Team B"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="403dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
